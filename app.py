@@ -19,11 +19,11 @@ def main():
             data_hora = datetime.combine(data, hora)
             
             venda = Vendas(
-                email = email,
+                email=email.encode('utf-8').decode('utf-8'),
                 data = data_hora,
                 valor = valor,
                 quantidade = quantidade,
-                produto = produto
+                produto=produto.encode('utf-8').decode('utf-8')
             )
             st.write(venda)
             salvar_no_postgres(venda)
