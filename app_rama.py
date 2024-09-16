@@ -12,9 +12,6 @@ def main():
         layout="wide",
     )
     
-    # Adicionar logotipo da empresa
-    st.image(r"C:\Users\pedro.cecere\Documents\Projetos\pipeline\crm-rama\AF_RAMA ADVOGADOS_HORIZONTAL_ 2_COLOR_sem associados.png", width=500)
-
     st.title("Distribuições ONR")
     data_af_07 = st.date_input("Data AF 0.7", datetime.now())
     data_af_11 = st.date_input("Data AF 1.1", datetime.now())
